@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .clock-container {
+    text-align: center;
+  }
+  
+  .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .needle {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+  }
+  
+  .hour {
+    width: 6px;
+    height: 50px;
+    background-color: #333;
+    transform: translateX(-50%);
+  }
+  
+  .minute {
+    width: 4px;
+    height: 70px;
+    background-color: #666;
+    transform: translateX(-50%);
+  }
+  
+  .second {
+    width: 2px;
+    height: 90px;
+    background-color: red;
+    transform: translateX(-50%);
+  }
+  
+  .center-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+  
+  .time, .date {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .clock {
+    border-color: #f0f0f0;
+  }
+  
+  .dark-mode .center-point, .dark-mode .hour, .dark-mode .minute {
+    background-color: #f0f0f0;
+  }
+  
